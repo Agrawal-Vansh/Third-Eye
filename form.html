@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truck Listing Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h2>List Your Truck</h2>
+    <form id="truckForm">
+        <div class="form-group">
+            <label for="truckModel">Truck Model:</label>
+            <input type="text" id="truckModel" name="truckModel" required>
+        </div>
+        <div class="form-group">
+            <label for="truckCategory">Truck Category:</label>
+            <select id="truckCategory" name="truckCategory" required>
+                <option value="">Select a Category</option>
+                <option value="light">Light</option>
+                <option value="medium">Medium</option>
+                <option value="heavy">Heavy</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="charges">Transportation Charges ($):</label>
+            <input type="number" id="charges" name="charges" required>
+        </div>
+        <div class="form-group">
+            <label for="mobileNo">Owner Mobile No.:</label>
+            <input type="tel" id="mobileNo" name="mobileNo" required>
+        </div>
+        <div class="form-group">
+            <button type="button" id="addMoreTrucks">Add More Trucks</button>
+        </div>
+        <button type="submit">List Truck(s)</button>
+    </form>
+
+    <!-- Placeholder for the trucks table -->
+    <div id="trucksList">
+        <h3>Listed Trucks</h3>
+        <table id="trucksTable">
+            <thead>
+                <tr>
+                    <th>Truck Model</th>
+                    <th>Category</th>
+                    <th>Charges ($)</th>
+                    <th>Mobile No.</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be added here dynamically -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="form.js"></script>
+</body>
+</html>
