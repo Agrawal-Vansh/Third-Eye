@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ride Booking</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #f4f4f4;
+        border-radius: 10px;
+    }
+    h2 {
+        text-align: center;
+    }
+    label {
+        font-weight: bold;
+    }
+    input[type="text"], input[type="datetime-local"], input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    #map {
+        height: 400px;
+        width: 100%;
+        margin-top: 20px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #4CAF50;
+        color: white;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Book Your Ride</h2>
+    <form id="rideForm">
+        <label for="from">From:</label>
+        <input type="text" id="from" name="from" required><br>
+
+        <label for="to">To:</label>
+        <input type="text" id="to" name="to" required><br>
+
+        <label for="datetime">Date & Time:</label>
+        <input type="datetime-local" id="datetime" name="datetime" required><br>
+
+        <input type="submit" value="Book Ride">
+    </form>
+
+    <div id="map"></div>
+
+    <h2>Scheduled Rides</h2>
+    <table id="ridesTable">
+        <thead>
+            <tr>
+                <th>From</th>
+                <th>To</th>
+                <th>Date & Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Scheduled rides will be dynamically added here -->
+        </tbody>
+    </table>
+</div>
+
+<script>
+    
+</script>
+
+<!-- Google Maps API script -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+
+</body>
+</html>
