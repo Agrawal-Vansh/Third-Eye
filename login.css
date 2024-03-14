@@ -9,7 +9,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("images/background2.jpg");
+    background-image: url("https://www.synox.io/wp-content/uploads/2022/01/smart-transport-gerer-flotte-camion-iot.png");
     background-size:cover;
     overflow:scroll;
 }
