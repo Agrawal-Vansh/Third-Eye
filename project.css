@@ -3,10 +3,11 @@
     padding: 0;
     font-family:PT Sans;
     border:border-box; 
+
 }
 .navbar{
     height:60px;
-    background-color:#0f1111;
+    background-color:#16d8d8;
     color:white;
     display:flex;
     align-items:center;
@@ -17,10 +18,13 @@
     width:100px;
 }
 .logo{
-    background-image:url("amazon clone (resources)/amazon_logo.png");
+    /* background-image:url("amazon_logo.png"); */
     background-size:cover;
     height:50px;
     width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 .border{
     border:2px solid transparent;
@@ -111,8 +115,11 @@
     margin-right:2px;
 }
 .hero-section{
-    background-image:url("Amazon Clone (Resources)/hero_image.jpg");
-    background-size:cover;
+    background-image: url("https://www.synox.io/wp-content/uploads/2022/01/smart-transport-gerer-flotte-camion-iot.png");
+
+
+    background-size:auto;
+    background-repeat: no-repeat;
     height:350px;
     display:flex;
     justify-content:center;
@@ -161,7 +168,12 @@
 }
 .box-img{
     height: 260px;
-    background-size:cover; 
+    /* background-size:cover;  */
+    /* background-size: contain; */
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:250px;
+    width:250px;
     margin-top:1rem;
     margin-bottom:1rem;
 }
@@ -218,4 +230,7 @@ ul a{
 .copyright{
     text-align:center;
     font-size:0.7rem;
+}
+.box-img{
+    background-size:cover;
 }

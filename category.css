@@ -1,0 +1,217 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family:PT Sans;
+    border:border-box; 
+
+}
+.navbar{
+    height:60px;
+    /* background-color:#405a5a; */
+    background-color: #0093E9;
+background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+.nav-logo{
+    height:50px;
+    width:100px;
+}
+.logo{
+    /* background-image:url("amazon_logo.png"); */
+    background-color: #0093E9;
+background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+    background-size:cover;
+    height:50px;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.border{
+    border:2px solid transparent;
+    cursor:pointer;
+}
+.border:hover{
+    border:2px solid white;
+}
+.add1{
+    color: #cccccc; 
+    font-size:0.85rem; 
+    margin-left:17px; 
+}
+.add2{
+    font-size:1rem;
+    margin-left:4px;
+    margin-top:1px;
+    font-weight:700;
+}
+.add-icon{
+    display: flex; 
+}
+.nav-search{
+    display:flex;
+    background-color: #68fe68; 
+    width:540px;
+    height:40px;
+    border-radius:4px;
+    border-radius:4px;
+}
+.search-select{ 
+    background-color:#d4d4d4;
+    width:50px;
+    text-align:center;
+    border-top-left-radius:4px;
+    border-bottom-left-radius:4px;
+    border:none;
+}
+.search-input{
+    width:450px;
+    font-size:1 rem;
+    border:none;
+}
+.search-icon{
+    width:40px; 
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 1.5rem;
+}
+.nav-search:hover{ 
+    border:2px solid rgb(26, 255, 0);
+    /* background-color:orange; */
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+.span{
+    font-size:0.7rem;
+}
+.nav2{ 
+    font-size:0.85rem;
+    font-weight:700;
+}
+.nav-cart i{ 
+    font-size: 30px;
+}
+.nav-cart{ 
+    font-size:0.85rem;
+    font-weight:700;
+}
+.panel{
+    height:40px;
+    background-color:#222f3d;
+    display:flex;
+    color:white;
+    align-items:center;
+    justify-content:left;
+}
+.panel-ops p{
+    display:inline;
+    margin-left:15px;
+}
+.panel-ops{
+    width:70%;
+    font-size:0.85rems;
+}
+.panel-deals{
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-right:2px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.truck {
+    width: 800px;
+    height: 550px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.truck:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.truck img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.truck .overlay{
+    position:absolute;   
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.387);
+    border-radius: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;    
+    color:white;
+    font-size:45px;
+    /* NOTE new property opacity */
+    opacity: 0;
+    transition: all 1s;
+    
+}
+.truck .overlay:hover
+{
+    opacity:1;
+}
+
+.truck h3 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    margin: 0;
+    color: #000000;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+    border-radius: 5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.truck:hover h3 {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.book{
+    text-decoration: none;
+    color: white;
+}

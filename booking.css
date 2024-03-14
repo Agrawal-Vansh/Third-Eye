@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://www.synox.io/wp-content/uploads/2022/01/smart-transport-gerer-flotte-camion-iot.png");
+    /* background-color: #4CAF50; */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Drop shadow */
+}
+h2 {
+    text-align: center;
+    color: #333;
+}
+label {
+    font-weight: bold;
+    color: #333;
+}
+input[type="text"], input[type="datetime-local"], input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: all 0.3s ease; /* Smooth transitions */
+}
+input[type="text"]:focus, input[type="datetime-local"]:focus {
+    border-color: #4CAF50; /* Change border color on focus */
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transitions */
+}
+input[type="submit"]:hover {
+    background-color: #45a049; /* Darker background color on hover */
+}
+#map {
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}

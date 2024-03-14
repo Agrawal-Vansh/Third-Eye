@@ -1,0 +1,120 @@
+/* styles.css */
+*{
+    text-decoration: none;
+    /* height:100vh;
+    width:100vw; */
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.option {
+    background: linear-gradient(to bottom, #ffffff 0%, #f0f0f0 100%);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.option::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: background-color 0.3s ease;
+    z-index: 1;
+    opacity: 0;
+}
+
+.option:hover::before {
+    opacity: 1;
+}
+
+.option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.option h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333333;
+    z-index: 2;
+    position: relative;
+}
+
+.option p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666666;
+    z-index: 2;
+    position: relative;
+}
+
+.foot-panel1{
+    background-color: #0e53a8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:0.85rem;
+    height:40px;
+    cursor: pointer;
+}
+.foot-panel1 a{
+    color:white;
+    text-decoration: none;
+}
+.foot-panel2{
+    background-color:  #0e53a8a3;
+    color:white;
+    height:300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul{
+    margin-top:20px;
+    font-weight:500;
+}
+ul a{
+    display: block;
+    font-size:0.85rem;
+    margin-top:15px;
+    color:#dddddd;
+    cursor:pointer;
+    text-decoration: none;
+}
+.foot-panel3{
+    background-color: black;
+    color:white;
+    height:40px;
+}
+.pages{
+    text-align:center;
+    font-size:0.7rem;
+    padding-top:5px;
+}
+.copyright{
+    text-align:center;
+    font-size:0.7rem;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Truck Categories</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="category.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+         <div class="nav-logo border"> 
+             <div class="logo">Road Buddy</div> 
+         </div>
+ 
+         <div class="nav-address border"> 
+             <p class="add1"> Deliver to </p>
+             <div class="add-icon"> 
+                 <i class="fa-solid fa-location-dot"></i> 
+                 <p class="add2">Gurgaon 122025</p>
+             </div>
+         </div> 
+         <div class="nav-search">
+             <select name="all" class="search-select">
+                <option>All</option>
+                <option>Heavy-duty</option>
+                <option>Lightweight</option>
+                <option>Specialized</option>
+                <option>Medium Weight</option>
+             </select>
+             <input placeholder="Search RoadBuddy" class="search-input" >
+             <div class="search-icon">
+                 <i class="fa-solid fa-magnifying-glass"></i>
+             </div>
+         </div>
+         <div class="nav-signin border">
+             <p><span>Hello, Nishika</span></p>
+             <p class="nav2">Accounts & Lists</p>
+         </div>
+         <div class="nav-returns border">
+             <p><span>Track</span></p>
+             <p class="nav2">Your Orders</p>
+         </div>
+         <div class="nav-cart border">
+             <!-- <i class="fa-solid fa-cart-shopping"></i> -->
+             <i class="fa-solid fa-calendar-days"></i>
+              <a href="booking.html" class="book">Schedule</a>
+         </div>
+        </div> 
+<div class="container">
+    <div class="truck">
+        <img src="data:image/jpeg;base64,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" alt="Semi-truck">
+        <div class="overlay">
+            <ol->
+                <li>Transportation of Goods</li>
+                <li>Construction Projects</li>
+                <li>Mining Operations</li>
+                <li>Agricultural Activities</li>
+                <li>Waste Management</li>
+            </ol->
+        </div>
+ 
+        <h3>Heavyweight Trucks</h3>
+    </div>
+    <div class="truck">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2021/3/JQ/ED/YH/12469657/bharatbenz-1415re-14-ton-medium-duty-truck-500x500.jpg" alt="Box Truck">
+        <div class="overlay">
+            <ol->
+                <li>Local Deliveries</li>
+                <li>Small-scale Construction</li>
+                <li>Urban and Suburban Transportation</li>
+                <li>Retail and Wholesale Distribution                </li>
+                <li>Service and Maintenance Industries</li>
+            </ol->
+        </div>
+        <h3>Medium Weight Trucks</h3>
+    </div>
+    <div class="truck" id="light">
+        <img src="data:image/jpeg;base64,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" alt="Pickup Truck">
+        <div class="overlay">
+            <ol->
+                <li>Personal Transportation </li>
+                <li>Small-scale Hauling and Moving</li>
+                <li>Light Delivery Services</li>
+                <li>Utility and Tradesman Vehicles </li>
+                <li>Recreational and Off-road Use</li>
+            </ol->
+        </div>
+        <h3>Lightweight Trucks</h3>
+    </div>
+    <div class="truck">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5EScHu0CBlHrsBeMUv32CKX91IcXs55ydTw&usqp=CAU" alt="Tanker Truck">
+        <div class="overlay">
+            <ol->
+                <li>Transporting Liquids and Gases                   </li>
+                <li>Transporting Perishable Goods</li>
+                <li>Firefighting and Emergency Response</li>
+                <li>Heavy-duty Applications in Rough Terrain</li>
+                <li> Vehicle Recovery and Towing Services</li>
+            </ol->
+        </div>
+        <h3>Specialized Trucks</h3>
+    </div>
+</div>
+
+</body>
+</html>
